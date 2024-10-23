@@ -25,7 +25,7 @@
         <!-- CSS Propio -->
         <link rel="stylesheet" href="./css/styles.css">
         <!-- aos css -->
-        <link rel="stylesheet" href="./node_modules/aos/dist/aos.css">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
         <link rel="icon" href="./img/logo-rayve-blanco.png">
         <!-- <link data-n-head="ssr" rel="icon" href="./favicon.ico">
         <link data-n-head="ssr" rel="apple-touch-icon" sizes="180x180"
@@ -595,7 +595,7 @@
                                                     <video
                                                         class="w-100 ratio-16x9"
                                                         controls autoplay loop
-                                                        src="./videos/SIGAE.mp4"></video>
+                                                        src="./videos/SIGAE.webm"></video>
                                                 </div>
                                             </div>
                                         </div>
@@ -934,7 +934,7 @@
                                                     <video
                                                         class="w-100 ratio-16x9"
                                                         controls autoplay loop
-                                                        src="./videos/SIGAE.mp4"></video>
+                                                        src="./videos/SIGAE.webm"></video>
                                                 </div>
                                             </div>
                                         </div>
@@ -1531,8 +1531,10 @@
             integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
             crossorigin="anonymous"></script>
         <!-- aos JS -->
-        <script type="text/javascript"
-            src="./node_modules/aos/dist/aos.js"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+       <script>
+          AOS.init();
+       </script>
         <!-- Font Awesome -->
         <script src="https://kit.fontawesome.com/22e2075a20.js"
             crossorigin="anonymous"></script>
