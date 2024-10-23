@@ -1,0 +1,9 @@
+@font-face {
+    font-family: playfair;
+    src: url("../fonts/Playfair-VariableFont_opsz,wdth,wght.ttf");
+}
+@font-face {
+    font-family: playfair;
+    font-style: italic;
+    src: url("../fonts/Playfair-VariableFont_opsz,wdth,wght.ttf");
+}
