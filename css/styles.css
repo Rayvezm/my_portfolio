@@ -377,6 +377,15 @@ main {
     transform-origin: top right;
 }
 
+h1.maquina-escribir {
+    width: 100%;
+}
+
+h2.maquina-escribir {
+    width: 100%;
+    /* el ancho será el número de caracteres que tiene nuestra línea */
+}
+
 .my-card {
     background: var(--linear-gradient);
     width: 260px;
@@ -482,12 +491,13 @@ a {
     .pc {
         display: initial;
     }
-h1.maquina-escribir {
-    width: 110%;
-}
 
-h2.maquina-escribir {
-    width: 100%;
-    /* el ancho será el número de caracteres que tiene nuestra línea */
-}
+    h1.maquina-escribir {
+        width: 110%;
+    }
+
+    h2.maquina-escribir {
+        width: 100%;
+        /* el ancho será el número de caracteres que tiene nuestra línea */
+    }
 }
