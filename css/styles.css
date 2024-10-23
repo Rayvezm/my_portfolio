@@ -157,15 +157,6 @@ main {
     overflow: hidden;
 }
 
-h1.maquina-escribir {
-    width: 110%;
-}
-
-h2.maquina-escribir {
-    width: 100%;
-    /* el ancho será el número de caracteres que tiene nuestra línea */
-}
-
 .cursor {
     color: #fff;
     animation: parpadeo-cursor 0.6s 10 forwards;
@@ -491,5 +482,12 @@ a {
     .pc {
         display: initial;
     }
+h1.maquina-escribir {
+    width: 110%;
+}
 
+h2.maquina-escribir {
+    width: 100%;
+    /* el ancho será el número de caracteres que tiene nuestra línea */
+}
 }
