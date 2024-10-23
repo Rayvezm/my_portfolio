@@ -1,0 +1,64 @@
+@font-face {
+    font-family: gatorade-black;
+    src: url(../font/gatorade-black-webfont.ttf);
+}
+
+@font-face {
+    font-family: gatorade-medium;
+    src: url(../font/gatorade-medium-webfont.ttf);
+}
+
+@font-face {
+    font-family: Molde-Condensed-Black;
+    src: url(../font/Molde-Condensed-Black.ttf);
+}
+
+@font-face {
+    font-family: Molde-Condensed-BlackItalic;
+    src: url(../font/Molde-Condensed-BlackItalic.ttf)
+}
+
+@font-face {
+    font-family: Molde-Condensed-BoldkItalic;
+    src: url(../font/Molde-Condensed-BoldItalic.ttf)
+}
+
+@font-face {
+    font-family: Molde-Condensed-Heavy;
+    src: url(../font/Molde-Condensed-Heavy.ttf);
+}
+
+@font-face {
+    font-family: Molde-Condensed-Medium;
+    src: url(../font/Molde-Condensed-Medium.ttf);
+}
+@font-face {
+    font-family: Molde-Condensed-Medium;
+    src: url(../font/Molde-Condensed-Medium.ttf);
+}
+@font-face {
+    font-family: Molde-Condensed-MediumItali;
+    src: url(../font/Molde-Condensed-MediumItalic.ttf);
+}
+@font-face {
+    font-family: Montserrat-Black;
+    src: url(../font/Montserrat-Black.ttf);
+}
+@font-face {
+    font-family: Montserrat-Bold;
+    src: url(../font/Montserrat-Bold.ttf);
+}
+@font-face {
+    font-family: Montserrat-Medium;
+    src: url(../font/Montserrat-Medium.ttf);
+}
+
+@font-face {
+    font-family: Poppins-Regular;
+    src: url(../font/Poppins-Regular.ttf)
+}
+
+@font-face {
+    font-family: Poppins-SemiBold;
+    src: url(../font/Poppins-SemiBold.otf)
+}

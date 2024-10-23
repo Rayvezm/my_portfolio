@@ -1,0 +1,23 @@
+*{
+    margin: 5px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+body{
+    background-color: cadetblue;
+}
+h4{
+    font-size: 22px;
+    font-family: "algerian";
+    align-content: center;
+}
+h2{
+    align-content: center;
+    font-family: "algerian";
+    font-size: 22px;
+}
+p{
+    font-family: "times new roman";
+    font-size: 15px;
+    padding: 5px;
+}

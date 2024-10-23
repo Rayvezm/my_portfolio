@@ -1,0 +1,235 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ol,ul{
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+#nav_bar{
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.503);
+    z-index: 10;
+    height: 10vh;
+    width: 100%;
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: helvetica;
+}
+
+#invertir{
+    filter: invert(100%);
+}
+
+#blanco{
+    display: flex;
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+}
+
+.aling{
+    display: flex;
+    justify-content: center;
+}
+
+/* section uno */
+
+.section__uno{
+    display: flex;
+    background-image: url("../JPG/seccion-uno.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    bottom: 120px;
+    height: 95vh;
+    width: 100%;
+}
+
+/* section dos */
+
+.section__dos{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+}
+
+.section__img{
+    display: flex;
+    width: 50%;
+    max-width: 560px;
+    min-width: 280px;
+    min-height: 400px;
+}
+
+.contenido__seccion{
+    display: flex;
+    justify-content: center;
+    min-width: 280px;
+    min-height: 400px;
+    width: 50%;
+    max-width: 560px;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contenido_sec1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: justify;
+    font-size: 15px;
+    font-family: gotham_light;
+}
+
+.contenido__ul-btn{
+    display: flex;
+    margin-top: 30px;
+    padding-left: 20%;
+    width: 100%;
+}
+
+.contenido__btn{
+    display: flex;
+    border: none;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    background-color: #000;
+    color: #fff;
+    width: 110px;
+    height: 30px;
+    cursor: pointer;
+    font-family: GothamMedium;
+}
+
+.contenido__btn:hover{
+    background-color: #000;
+}
+
+.contenido__btn:active{
+    background-color: #6b6b6b;
+    scale: 0.9;
+}
+
+.contenido__btn a {
+    text-decoration: none;
+}
+
+/* section tres */
+
+.section__tres{
+    background-image: url("../JPG/fondo.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    padding: 80px 20px 280px;
+    align-items: center;
+    color: #fff;
+    row-gap: 30px;
+}
+
+.contenido_h1{
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    text-align: center;
+    font-family: gotham_thin;
+}
+
+.section__img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    justify-content: space-around;
+}
+
+.mojito__img-uno{ 
+    height: 300px;
+    margin: 0; 
+}
+
+.libre__img-dos{ 
+    height: 300px;
+    margin: 0;
+}
+
+.daiquiri__img-tres{ 
+    height: 300px;
+    margin: 0;
+}
+
+.footer__nombres{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+    width: 60%;
+    margin: 0;
+}
+
+.footer_nomb{
+    margin: 0;
+    font-family: gotham_thin;
+    font-size: 30px;
+}
+
+/* footer */
+
+.contenido__footer{
+    display: flex;
+    position: absolute;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 150px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.521); 
+    padding: 20px 70px;
+    color: #ffffff;
+    bottom: 0;
+}
+
+.footer_logo{
+    height: 100px;
+    margin-bottom: 10px;
+}
+
+.redes_footer{
+    display: flex;
+    width: 15%;
+}
+
+.red_face , .red_insta{
+    height: 80px;
+}
+
+@media (width <= 990px) {
+    .section__uno{
+        background-image: url("../JPG/seccion-uno-telefono.jpg");
+    }
+    .contenido__footer{
+        justify-content: center;
+    }
+    .bg-andreina{
+        background-color: rgba(0, 0, 0, 0.32);
+    }
+}

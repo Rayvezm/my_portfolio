@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- hacer el favicon -->
+    <link rel="icon" type="favicon" href="img/favicon.png">
+    <!-- style propio -->
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/fonts.css">
+    <!-- style bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <title>Landing Gatorade</title>
+</head>
+
+<body>
+
+    <!-- header landing -->
+    <header class="menu">
+        <figure class="menu__logo">
+            <a href="https://www.farmatodo.com.ve/" class="menu__logo logo--farma"><img
+                    src="./img/svg/logo_farmatodo.svg" alt="logo_farmatodo"></a>
+            <!-- nota personal, comprobar si la class es para img o para el enlace  -->
+
+            <img src="./img/svg/logo_gatorade.svg" alt="logo_gatorade" class="menu__logo logo--gatorade">
+        </figure>
+    </header>
+
+    <!-- contenido -->
+    <main>
+
+        <!-- seccion principal -->
+
+        <section class="principal">
+            <!-- texto -->
+            <article class="principal__texto">
+                <header class="principal__titulo">
+                    <h1 class="principal_h1">GATORADE</h1>
+                    <h3>EL EXPERTO EN NUTRICIÓN</h3>
+                </header>
+
+                <p class="principal__parrafo1">Bebida deportiva, ideal para hidratar tu cuerpo con <br> energía y
+                    minerales para continuar con tu rutina.</p>
+
+                <p class="principal__parrafo">Siente la diferencia. <span class="otro_color">¡Prueba Gatorade
+                        hoy!</span></p>
+
+                <!-- boton -->
+                <footer class="principal__btn">
+                    <a href="#" class="principal__enlace">COMPRAR</a>
+                </footer>
+
+            </article>
+
+            <!-- imagen de gatorade principal -->
+            <article class="principal__img">
+                <figure>
+                    <img src="./img/webp/gatorade-seccion1.webp" height="730" alt="gatorade-seccion1">
+                </figure>
+            </article>
+        </section>
+
+        <!-- SECCION PRODUCTOS - DOS -->
+        <section class="sabores">
+            <header class="sabores__text">
+                <h2>PRODUCTOS</h2>
+                <p>¡Dale a tu cuerpo lo que necesita para ganar!</p>
+            </header>
+            <!-- tarjetas de productos -->
+            <div class="sabor__card">
+
+                <!-- gatorade rojo tarjeta -->
+                <article class="sabores__tarjetas tarjetas--visibles">
+                    <header>
+                        <figure class="sabor__img">
+                            <img src="./img/webp/gatorade_rojo.webp" width="125px" alt="gatorade_rojo">
+                        </figure>
+                        <header>
+                            <h3 class="sabor__titulo">Frutos <br> Rojos</h3>
+                            <h4 class="sabor__h4">500ml</h4>
+                        </header>
+                    </header>
+
+                    <!-- boton comprar tarjeta -->
+                    <footer class="sabor__bt">
+                        <a href="https://www.farmatodo.com.ve/producto/111011325-bebida-gatorade-tropical-fruit-500ml"
+                            target="_blank" class="principal__enlace">
+                            COMPRAR</a>
+                    </footer>
+                </article>
+
+                <!-- gatorade azul tarjeta -->
+
+                <article class="sabores__tarjetas tarjetas--visibles">
+                    <figure class="sabor__img">
+                        <img src="./img/webp/gatorade_azul.webp" width="125px" alt="gatorade_azul">
+                    </figure>
+                    <header>
+                        <h3 class="sabor__titulo">Mora <br> Azul</h3>
+                        <h4 class="sabor__h4">500ml</h4>
+                    </header>
+
+                    <!-- boton comprar tarjeta -->
+                    <footer class="sabor__bt">
+                        <a href="https://www.farmatodo.com.ve/producto/111929632-bebida-gatorade-mora-500ml"
+                            target="_blank" class="principal__enlace">COMPRAR</a>
+                    </footer>
+                </article>
+
+                <!-- gatorade naranja tarjeta -->
+                <article class="sabores__tarjetas tarjetas--visibles">
+                    <figure class="sabor__img">
+                        <img src="./img/webp/gatorade_naranja.webp" width="125px" alt="gatorade_naranja">
+                    </figure>
+                    <header>
+                        <h3 class="sabor__titulo">Manda<br> -rina</h3>
+                        <h4 class="sabor__h4">500ml</h4>
+                    </header>
+                    <!-- boton comprar tarjeta -->
+                    <footer class="sabor__bt">
+                        <a href="https://www.farmatodo.com.ve/producto/111011326-bebida-gatorade-mandarina-500ml"
+                            target="_blank" class="principal__enlace">COMPRAR</a>
+                    </footer>
+                </article>
+                <article id="carouselExample" class="carousel slide carrusel-oculto w-100 h-100">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <!-- gatorade rojo tarjeta -->
+                            <article class="sabores__tarjetas tarjetas--ocultas mx-auto my-5">
+                                <header>
+                                    <figure class="sabor__img">
+                                        <img src="./img/webp/gatorade_rojo.webp" width="125px" alt="gatorade_rojo">
+                                    </figure>
+                                    <header>
+                                        <h3 class="sabor__titulo">Frutos <br> Rojos</h3>
+                                        <h4 class="sabor__h4">500ml</h4>
+                                    </header>
+                                </header>
+
+                                <!-- boton comprar tarjeta -->
+                                <footer class="sabor__bt">
+                                    <a href="https://www.farmatodo.com.ve/producto/111011325-bebida-gatorade-tropical-fruit-500ml"
+                                        target="_blank" class="principal__enlace">
+                                        COMPRAR</a>
+                                </footer>
+                            </article>
+                        </div>
+
+                        <!-- carrusel reponsive -->
+                        <div class="carousel-item">
+                            <!-- gatorade azul tarjeta -->
+
+                            <article class="sabores__tarjetas tarjetas--ocultas mx-auto my-5">
+                                <figure class="sabor__img">
+                                    <img src="./img/webp/gatorade_azul.webp" width="125px" alt="gatorade_azul">
+                                </figure>
+                                <header>
+                                    <h3 class="sabor__titulo">Mora <br> Azul</h3>
+                                    <h4 class="sabor__h4">500ml</h4>
+                                </header>
+
+                                <!-- boton comprar tarjeta -->
+                                <footer class="sabor__bt">
+                                    <a href="https://www.farmatodo.com.ve/producto/111929632-bebida-gatorade-mora-500ml"
+                                        target="_blank" class="principal__enlace">COMPRAR</a>
+                                </footer>
+                            </article>
+                        </div>
+                        <div class="carousel-item">
+                            <!-- gatorade naranja tarjeta -->
+                            <article class="sabores__tarjetas tarjetas--ocultas mx-auto my-5">
+                                <figure class="sabor__img">
+                                    <img src="./img/webp/gatorade_naranja.webp" width="125px" alt="gatorade_naranja">
+                                </figure>
+                                <header>
+                                    <h3 class="sabor__titulo">Manda<br> -rina</h3>
+                                    <h4 class="sabor__h4">500ml</h4>
+                                </header>
+                                <!-- boton comprar tarjeta -->
+                                <footer class="sabor__bt">
+                                    <a href="https://www.farmatodo.com.ve/producto/111011326-bebida-gatorade-mandarina-500ml"
+                                        target="_blank" class="principal__enlace">COMPRAR</a>
+                                </footer>
+                            </article>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </article>
+
+
+
+            </div>
+
+        </section>
+
+        <!-- SECCION BENEFICIOS - tres -->
+
+        <section class="beneficios">
+            <header class="beneficios__text">
+                <h2>BENEFICIOS</h2>
+                <p>Siente la diferencia. <span class="black">¡Prueba Gatorade hoy!</span></p>
+            </header>
+
+            <div class="beneficios__flex">
+                <!-- tarjeta izquierda -->
+                <article class="beneficios__cardcuadrado">
+                    <figure>
+                        <img src="./img/webp/img_repone.webp" alt="img_repone" height="470px" class="w-100">
+                    </figure>
+                </article>
+
+                <!-- tarjeta derecha -->
+                <article class="beneficios__cardcuadrado">
+                    <figure>
+                        <img src="./img/webp/img_hidrata.webp" alt="img_hidrata" height="470px" class="w-100">
+                    </figure>
+                </article>
+            </div>
+            <article class="beneficios__rectangular">
+                <!-- tarjeta horizaontal -->
+                <figure class="beneficios__img px-5">
+                    <img src="./img/webp/img_reactiva.webp" alt="img_reactiva" class="w-100">
+                </figure>
+            </article>
+
+            <footer class="beneficios__footer">
+                <p>Suscríbete y recibe un <span class="color">30% de descuento</span> en tu próxima compra"</p>
+
+                <article class="beneficios__btn">
+                    <a href="https://www.farmatodo.com.ve/" target="_blank" class="principal__enlace">
+                        SUBCRIBIRSE</a>
+                </article>
+            </footer>
+        </section>
+
+        <!-- Banner -->
+        <section class="banner">
+        </section>
+
+        <!-- FOOTER -->
+        <footer class="footer d-flex flex-wrap">
+            <a href="https://www.farmatodo.com.ve/" class="logo">
+                <img src="./img/svg/logo_farmatodo.svg" alt="logo" class="logo-footer">
+            </a>
+
+            <span class="codigo_footer">&copy; 2024 Farmatodo Venezuela C.A. RIF: J-00020200-1
+                VEN-V3063-1.0.1-Website</span>
+
+            <!-- <a href="#arriba" class="flecha_ir_arriba">
+            <img src="./img/svg/" alt="icono" class="icon_arriba">
+        </a> -->
+
+            <figure class="footer_reder">
+                <a href="https://www.instagram.com/farmatodovzla/?hl=es-la">
+                    <img src="./img/svg/instagram.svg" alt="instagram" class="iconos_redes">
+                </a>
+                <a href="https://www.facebook.com/farmatodovenezuela/?locale=es_LA">
+                    <img src="./img/svg/facebook.svg" alt="facebook" width="" class="iconos_redes">
+                </a>
+                <a href="https://twitter.com/farmatodo">
+                    <img src="./img/svg/twiter.svg" alt="twitter" class="iconos_redes">
+                </a>
+                <a href="https://ve.linkedin.com/company/farmatodo">
+                    <img src="./img/svg/linkedin.svg" alt="linkedin" class="iconos_redes">
+                </a>
+            </figure>
+        </footer>
+
+        <!-- bootstrap js -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+            crossorigin="anonymous"></script>
+
+</body>
+
+</html>

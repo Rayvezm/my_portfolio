@@ -1,0 +1,221 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ol,ul{
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+#nav_bar{
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.503);
+    z-index: 10;
+    height: 10vh;
+    width: 100%;
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: helvetica;
+}
+
+#invertir{
+    filter: invert(100%);
+}
+
+#blanco{
+    display: flex;
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+}
+
+.aling{
+    display: flex;
+    justify-content: center;
+}
+
+/* section uno */
+
+.section__uno{
+    display: flex;
+    background-image: url("../JPG/seccion-uno.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    bottom: 120px;
+    height: 95vh;
+    width: 100%;
+}
+
+
+/* SECTION DOS */
+
+.section__dos{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+}
+
+.section__img_foto{
+    display: flex;
+    width: 100px;
+    max-width: 560px;
+    min-width: 270px;
+    min-height: 400px; 
+}
+
+.art_formulario{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-width: 280px;
+    min-height: 400px;
+    max-width: 560px;
+    width: 100%;
+    max-width: 550px;
+    font-family: GothamMedium;
+    font-size: 18px;
+    margin-top: 50px;
+
+}
+
+.controls{
+    display: flex;
+    width: 100%;
+    background: #999999;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: none;
+}
+
+.mesaje{
+    display: flex;
+    width: 100%;
+    background: #999999;
+    padding: 100px;
+    border: none;
+    color: #0f0f0f ;
+    padding-left: 10px;
+    padding-top: 20px;
+}
+
+input[type="text"]::placeholder{
+    color: #0f0f0f ;
+}
+input[type="email"]::placeholder{
+    color: #000000 ;
+}
+input[type="mensajes"]::placeholder{
+    color: #000000 ;
+}
+
+.formulario__btn{
+    display: flex;
+    border: none;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    background-color: #000;
+    color: #fff;
+    width: 150px;
+    height: 30px;
+    cursor: pointer;
+    margin-top: 30px;
+}
+
+.formulario__btn:hover{
+    background-color: #000;
+}
+
+.formulario__btn:active{
+    background-color: #6b6b6b;
+    scale: 0.9;
+}
+
+/* SECTION TRES */
+
+.contenido_tres{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-top: 30px;
+}
+
+.contec_tres{
+    display: flex;
+    margin-bottom: 30px;
+    font-family: GothamMedium;
+}
+
+.parrafos{
+    display: flex;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+    padding: 20px;
+    line-height: 20px;
+    gap: 30px;
+    font-size: 15px;
+    font-family: gotham_light;
+}
+
+/* footer */
+
+.contenido__footer{
+    display: flex;
+    position: absolute;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 150px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.521); 
+    padding: 20px 70px;
+    color: #ffffff;
+    top: ;
+}
+
+.footer_logo{
+    height: 100px;
+    margin-bottom: 10px;
+}
+
+.redes_footer{
+    display: flex;
+    width: 15%;
+}
+
+.red_face , .red_insta{
+    height: 80px;
+}
+
+@media (width <= 990px) {
+    .section__uno{
+        background-image: url("../JPG/seccion-uno-telefono.jpg");
+    }
+    .contenido__footer{
+        justify-content: center;
+    }
+    .bg-andreina{
+        background-color: rgba(0, 0, 0, 0.32);
+    }
+
+.art_formulario{
+    justify-content: center;
+}
+.section__img{
+    justify-content: center;
+}
+}

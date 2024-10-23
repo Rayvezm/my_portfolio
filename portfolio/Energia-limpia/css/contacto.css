@@ -1,0 +1,314 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    transition: background-color 0.3s ease;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.3rem 2rem;
+    gap: clamp(10px, 5vw, 50px);
+}
+
+nav a {
+    color: #17181a;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 1rem;
+    text-decoration: none;
+}
+
+.logo img {
+    height: 30px;
+    filter: brightness(0) saturate(100%) invert(7%) sepia(6%) saturate(838%) hue-rotate(182deg) brightness(95%) contrast(93%);
+}
+
+.nav-left, .nav-right {
+    display: flex;
+    align-items: center;
+    gap: clamp(10px, 5vw, 50px);
+    text-align: center;
+}
+
+.hamburger {
+    display: none;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.d-flex {
+    display: none;
+    
+}
+
+.oculto {
+    display: none;
+}
+
+#mobile-menu {
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    background-color: black;
+    padding: 1rem;
+}
+
+#mobile-menu a {
+    color: white;
+    padding: 0.5rem 0;
+    text-align: center;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+.header {
+    background-color: transparent;
+    transition: background-color 0.3s ease;
+}
+
+.scrolled {
+    background-color: rgb(255, 255, 255); /* O el color que prefieras */
+}
+@media (max-width: 768px) {
+    .d-flex {
+        display: flex;
+        
+    }
+        .nav-left, .nav-right {
+            display: none;
+        }
+    
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 2rem 2rem;
+            gap: clamp(10px, 5vw, 50px);
+        }
+    
+        .hamburger {
+            display: block;
+            color: #17181a;
+        }
+    
+        .logo img {
+            height: 30px;
+        }
+    }
+
+    /* CATEGORIAS */
+
+.contacto {
+    min-height: 100vh;
+    height: auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url(../img/jpg/fondo-cont.jpg)no-repeat center center/cover;
+}
+
+.contacont {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+    padding: 20px;
+    margin: 20px;
+    flex-wrap: wrap;
+}
+
+.cont1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: auto;
+    text-align: center;
+}
+
+.cont1 p{
+    max-width: 430px;
+}
+
+.cont1 strong{
+    font-weight: 800;
+    color: #17181a;
+}
+
+
+.cont2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    max-width: 450px;
+    flex-grow: 1;
+    flex-basis: 0;
+}
+
+.formulario {
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.formulario textarea {
+    font-family: Poppins;
+
+}
+
+
+.formulario input , textarea{
+    font-size: 18px;
+    width: 100%;
+    max-width: 400px;
+    padding: 15px;
+    border: none;
+    background-color: #F7F7F7;
+    border-radius: 10px;
+    color: #000000;
+}
+
+.formulario button {
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    width: 80%;
+    background: #17181a;
+    color: #F7F7F7;
+    border: none;
+    border-radius: 10px;
+}
+
+.contacontr {
+    display: none;
+}
+
+
+    /* Footer general */
+.site-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 2rem;
+    background-color: #17181a;
+    color: white;
+    font-size: 1rem;
+}
+
+/* Estilo para la parte izquierda */
+.footer-left p {
+    margin: 0;
+    font-size: 1rem;
+    color: #bbb;
+}
+
+/* Estilo para la parte central (enlaces) */
+.footer-center {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.footer-center a {
+    color: #bbb;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.footer-center a:hover {
+    color: white;
+}
+
+/* Estilo para la parte derecha (redes sociales) */
+.footer-right {
+    display: flex;
+    gap: 1rem;
+}
+
+.footer-right a img {
+    width: auto;
+    height: 20px;
+    filter: brightness(0) saturate(100%) invert(84%) sepia(0%) saturate(4874%) hue-rotate(88deg) brightness(90%) contrast(92%);
+}
+
+/* Estilos responsivos para pantallas pequeñas */
+@media (max-width: 768px) {
+    .site-footer {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-center {
+        margin: 1rem 0;
+        justify-content: center;
+    }
+
+    .footer-right {
+        justify-content: center;
+    }
+}
+
+
+@media (max-width: 950px) {
+
+    .contacontr {
+        display: block;
+    }
+
+    .contacontr {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 100px;
+        padding: 50px;
+        margin: 80px;
+        flex-wrap: wrap;
+    }
+
+    .contacont {
+        display: none;
+    }
+
+    .cont2 {
+        width: 100%;
+    }
+
+    .formulario {
+        width: 100%;
+        max-width: 460px;
+        flex-grow: 1;
+        flex-basis: 0;
+    }
+}

@@ -1,0 +1,19 @@
+@font-face {
+    font-family: gotham_light;
+    src: url("../FONT/Gotham-Light.otf") format("opentype");
+}
+
+@font-face {
+    font-family: gotham_thin;
+    src: url("../FONT/Gotham-Thin.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: GothamMedium;
+    src: url("../FONT/GothamMedium.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: helvetica;
+    src: url("../FONT/Helvetica.ttf") format("truetype");
+}

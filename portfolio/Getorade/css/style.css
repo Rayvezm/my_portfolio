@@ -1,0 +1,450 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* styles header */
+.menu {
+    background: #1A1A1A;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    height: 90px;
+    padding: 25px;
+}
+
+.menu__logo {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.logo--farma {
+    height: 55px;
+    width: 150px;
+}
+
+.logo--gatorade {
+    height: 55px;
+    width: 35px;
+}
+
+
+/* seccion principal - una  */
+
+.principal {
+    display: flex;
+    justify-content: space-around;
+    /* manajar en si separar los articules */
+    background-image: url("../img/webp/f_seccion_1.webp");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    align-items: center;
+    min-height: 100vh;
+    gap: 20px;
+}
+
+/* texto principal */
+
+.principal__texto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 450px;
+    min-width: 450px;
+    color: white;
+}
+
+.principal__titulo {
+    line-height: none;
+}
+
+.principal h1 {
+    font-family: gatorade-black;
+    color: #FA611E;
+    font-size: 100px;
+    letter-spacing: 10px;
+}
+
+h3 {
+    font-family: Molde-Condensed-BoldkItalic;
+    font-size: 35px;
+    letter-spacing: 3px;
+}
+
+.principal h3 {
+    margin-top: -20px;
+}
+
+.principal p {
+    font-family: poppins-regular;
+    /* modificar el interlineado */
+    line-height: 20px;
+    text-align: justify;
+}
+
+.principal__parrafo {
+    margin: 10px 0 0 0;
+}
+
+.otro_color {
+    color: #FF931E;
+}
+
+
+.principal__parrafo1 {
+    background-color: #464646;
+    border-radius: 8px;
+    padding: 15px;
+    initial-letter: 5px;
+}
+
+/* boton principal */
+.principal__btn {
+    min-height: 80px;
+    display: flex;
+    align-items: center;
+    font-family: Molde-Condensed-BoldkItalic;
+    letter-spacing: 2px;
+}
+
+.principal__enlace {
+    /* es necesaria esta clase para quitarle las propuedades que trae por defecto y pueda agarrar las caracteristicas de boton */
+    border: 1px solid #fff;
+    text-decoration: none;
+    color: #fff;
+    background-color: #FA611E;
+    padding: 5px 20px;
+    border-radius: 8px;
+    display: inline-block;
+}
+
+/* imagen gatorade */
+
+.principal__img {
+    width: 450px;
+    display: flex;
+    justify-content: center;
+}
+
+/* COMIENZA LA SECCION DOS */
+
+.sabores {
+    padding: 50px;
+    background-image: url("../img/webp/f_seccion_2.webp");
+    background-size: cover;
+    background-position: center;
+    /* 
+    100% */
+    text-align: center;
+    ;
+}
+
+/* min-height:512px; */
+
+.sabores__text h2 {
+    font-family: gatorade-black;
+    font-size: 60px;
+    margin-top: 10px;
+    color: #FA611E;
+    letter-spacing: 5px;
+}
+
+.sabores__text p {
+    color: #fff;
+    font-family: Molde-Condensed-BoldkItalic;
+    font-size: 40px;
+    margin-top: -10px;
+    letter-spacing: 2px;
+}
+
+.sabor__card {
+    display: flex;
+    gap: 100px;
+    justify-content: center;
+    column-gap: 80px;
+    margin: 70px 0;
+    flex-wrap: wrap;
+
+}
+
+.sabor__btn {
+    min-height: 80px;
+    display: flex;
+    align-items: center;
+    font-family: Molde-Condensed-BoldkItalic;
+    letter-spacing: 2px;
+}
+
+.principal__enlace {
+    border: 1px solid #fff;
+    text-decoration: none;
+    color: #fff;
+    background-color: #FA611E;
+    padding: 5px 20px;
+    border-radius: 8px;
+    display: inline-block;
+}
+
+/* SECCION BENEFICIOS -TRES */
+
+
+.beneficios {
+    padding: 50px;
+    background-image: url("../img/webp/f_seccion_beneficios.webp");
+    background-size: cover;
+    background-size: 100% 100%;
+    background-position: center;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.beneficios__text h2 {
+    font-family: gatorade-black;
+    font-size: 60px;
+    margin-top: 10px;
+    color: #FA611E;
+    letter-spacing: 5px;
+}
+
+.beneficios__text p {
+    color: #fff;
+    font-family: Molde-Condensed-MediumItali;
+    font-size: 40px;
+    margin-top: -10px;
+    letter-spacing: 2px;
+}
+
+.black {
+    font-family: Molde-Condensed-BlackItalic;
+}
+
+/* tarjetas de beneficios */
+.beneficios__flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.beneficios__cardcuadrado {
+    min-width: 50%;
+    max-width: 470px;
+    padding: 0 25px;
+}
+
+.beneficios__rectangular {
+    max-width: 910px;
+    min-width: 65%;
+}
+
+/* beneficios footer */
+
+.beneficios__footer {
+    display: flex;
+    gap: 100px;
+    justify-content: center;
+    align-items: center;
+    column-gap: 80px;
+    margin: 70px 0;
+    flex-wrap: wrap;
+}
+
+.beneficios__footer p {
+    font-family: Molde-Condensed-MediumItali;
+    font-size: 35px;
+    color: #fff;
+}
+
+.color {
+    color: #FF931E;
+    font-family: Molde-Condensed-BoldkItalic;
+
+}
+
+.beneficios__btn {
+    min-height: 80px;
+    display: flex;
+    align-items: center;
+    font-family: Molde-Condensed-MediumItali;
+    letter-spacing: 2px;
+}
+
+.principal__enlace {
+    border: 1px solid #fff;
+    text-decoration: none;
+    color: #fff;
+    background-color: #FA611E;
+    padding: 5px 15px;
+    border-radius: 8px;
+    display: inline-block;
+}
+
+/* ordenar */
+
+.sabores__tarjetas {
+    background-color: #111;
+    border: 1px solid #eee;
+    transform: skew(-20deg);
+    position: relative;
+    min-height: 250px;
+    width: 195px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 65px;
+    align-items: end;
+    padding: 25px;
+}
+
+.sabor__img {
+    position: absolute;
+    top: -65px;
+    left: -20px;
+    transform: skew(20deg);
+}
+
+.sabor__titulo {
+    color: #fff;
+}
+
+.sabor__h4 {
+    color: #fa611e;
+    background-color: #0a0303;
+    padding: 8px 7px 8px 46px;
+}
+
+
+/* carrusel oculto */
+.carrusel-oculto {
+    display: none;
+}
+
+
+/* hasta aqui seccion de productos carrusel y eso */
+
+
+/* BANNER */
+.banner {
+    display: flex;
+    background-image: url("../img/webp/banner-messi.webp");
+    background-size: 100% 100%;
+    width: 100%;
+    min-height: 650px;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    position: relative;
+}
+
+/* FOOTER */
+
+.footer {
+    position: relative;
+    width: 100%;
+    min-height: 80px;
+    background: #1A1A1A;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    padding-top: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 10px;
+    justify-content: space-between;
+
+}
+
+.logo-footer {
+    width: 200px;
+}
+
+.iconos_redes {
+    width: 30px;
+}
+
+.footer_reder {
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+    color: #fff;
+}
+
+.codigo_footer {
+    color: #fff;
+    font-size: 15px;
+    margin: 10px;
+    opacity: 60%;
+}
+
+
+/* media query */
+
+@media screen and (width <=950px) {
+    .principal {
+        flex-direction: column;
+        padding: 0 45px;
+        width: 100%;
+    }
+
+    .tarjetas--visibles {
+        display: none;
+    }
+
+    .carrusel-oculto {
+        display: initial;
+        min-height: 200px;
+    }
+
+    .principal h1,
+    .principal h3 {
+        font-size: 35px;
+        padding-left: 40px;
+    }
+
+    .principal p,
+    h1,
+    .principal h3 {
+        width: 80%;
+        align-self: center;
+    }
+
+    .principal__btn {
+        width: 80%;
+        align-self: center;
+    }
+
+    .sabores__text h2 {
+        width: 100%;
+        font-size: 35px;
+    }
+
+    .beneficios__text h2 {
+        width: 100%;
+        font-size: 35px;
+    }
+
+    .logo--farma {
+        height: 45px;
+        width: 50%;
+    }
+
+    .menu {
+        padding: 0 15px;
+        height: 100px;
+    }
+
+    .principal__texto {
+        width: 100%;
+        min-width: 358px;
+    }
+    .principal__img{
+        width: 100%;
+    }
+}

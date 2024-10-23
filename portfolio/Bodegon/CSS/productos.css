@@ -1,0 +1,303 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ol,ul{
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+.header{
+	z-index: 1000;
+}
+#nav_bar{
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.503);
+    z-index: 20;
+    height: 10vh;
+    width: 100%;
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: helvetica;
+	z-index: 100;
+}
+
+#invertir{
+    filter: invert(100%);
+}
+
+#blanco{
+    display: flex;
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+}
+
+.aling{
+    display: flex;
+    justify-content: center;
+}
+
+/* section uno */
+
+.section__uno{
+    display: flex;
+    background-image: url("../JPG/seccion-uno.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    bottom: 120px;
+    height: 95vh;
+    width: 100%;
+
+}
+
+/* section dos */
+
+.section_dos{
+	display: flex;
+	position: relative;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 140px 100px 0;
+	width: 100%;
+	min-height: 50px;
+	
+}
+
+.titulo_uno{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.titlo_h2{
+	font-size: 50px;
+	font-family: gotham_light;
+	text-decoration: underline;
+	text-decoration-color: rgb(0, 0, 0);
+}
+
+
+.carruseles_productos_1{
+	display: flex;
+	gap: 90px;
+	position: relative;
+	align-items: center;
+	justify-content: center;
+	width: 80%;
+	margin-top: 10px;
+    margin-left: 10%;
+    padding: 40px 0;
+	
+}
+
+.carrusel_1_ron{
+	display: flex;
+	position: relative;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	
+}
+
+.carrusel_2_ron{
+	display: flex;
+	position: relative;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	
+}
+
+.carrusel_3_ron{
+	display: flex;
+	position: relative;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	
+}
+
+/* section tres */
+
+.section_tres{
+	display: flex;
+	position: relative;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 140px 100px 0;
+	width: 100%;
+	min-height: 50px;
+	
+}
+
+.titulo_dos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carruseles_productos_uno{
+	display: flex;
+	gap: 90px;
+	position: relative;
+	align-items: center;
+	justify-content: center;
+	width: 80%;
+	margin-top: 10px;
+    margin-left: 10%;
+    padding: 40px 0;
+}
+
+.carrusel_2_wiski{
+	display: flex;
+	position: relative;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.carrusel_dos_wiski{
+	display: flex;
+	position: relative;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.carrusel_3_wiski{
+	display: flex;
+	position: relative;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+/* section cuatro */
+
+.section_cuatro{
+	display: flex;
+	position: relative;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 140px 100px 0;
+	width: 100%;
+	min-height: 50px;
+}
+
+.titulo_tres{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.carruseles_productos_dos{
+	display: flex;
+	gap: 90px;
+	position: relative;
+	align-items: center;
+	justify-content: center;
+	width: 80%;
+	margin-top: 10px;
+    margin-left: 10%;
+    padding: 40px 0;
+}
+
+.carrusel_1_vino{
+	display: flex;
+	position: relative;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.carrusel_2_vino{
+	display: flex;
+	position: relative;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.carrusel_3_vino{
+	display: flex;
+	position: relative;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+/* footer */
+
+.contenido__footer{
+    display: flex;
+    position: absolute;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 150px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.521); 
+    padding: 20px 70px;
+    color: #ffffff;
+}
+
+.footer_logo{
+    height: 100px;
+    margin-bottom: 10px;
+}
+
+.redes_footer{
+    display: flex;
+    width: 15%;
+}
+
+.red_face , .red_insta{
+    height: 80px;
+}
+.carru__tlf{
+	width: 50%;
+}
+
+@media (width <= 990px) {
+    .section__uno{
+        background-image: url("../JPG/seccion-uno-telefono.jpg");
+    }
+    .contenido__footer{
+        justify-content: center;
+    }
+    .bg-andreina{
+        background-color: rgba(0, 0, 0, 0.32);
+    }
+	.carruseles_productos_1{
+		flex-wrap: wrap;
+		width: 350px;
+	}
+	.carruseles_productos_uno{
+		flex-wrap: wrap;
+		width: 350px;
+	}
+	.carruseles_productos_dos{
+		flex-wrap: wrap;
+		width: 350px;
+	}
+	.titlo_h2{
+		font-size: 30px;
+		align-items: center;
+		justify-content: center;
+	}
+	.carru__tlf{
+		width: 100%;
+	}
+}

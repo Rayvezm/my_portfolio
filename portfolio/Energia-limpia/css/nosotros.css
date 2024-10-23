@@ -1,0 +1,316 @@
+/* General styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    transition: background-color 0.3s ease;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.3rem 2rem;
+    gap: clamp(10px, 5vw, 50px);
+}
+
+nav a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 1rem;
+    text-decoration: none;
+}
+
+.logo img {
+    height: 30px;
+}
+
+.nav-left, .nav-right {
+    display: flex;
+    align-items: center;
+    gap: clamp(10px, 5vw, 50px);
+    text-align: center;
+}
+
+.hamburger {
+    display: none;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.d-flex {
+    display: none;
+    
+}
+
+.oculto {
+    display: none;
+}
+
+#mobile-menu {
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    background-color: black;
+    padding: 1rem;
+}
+
+#mobile-menu a {
+    color: white;
+    padding: 0.5rem 0;
+    text-align: center;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+/* Sticky header on scroll */
+.scrolled {
+    background-color: black;
+}
+
+@media (max-width: 768px) {
+    .d-flex {
+        display: flex;
+        
+    }
+        .nav-left, .nav-right {
+            display: none;
+        }
+    
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 2rem 2rem;
+            gap: clamp(10px, 5vw, 50px);
+        }
+    
+        .hamburger {
+            display: block;
+            color: white;
+        }
+    
+        .logo img {
+            height: 30px;
+        }
+    }
+
+/* Banner */
+.banner {
+    background: url('../img/jpg/fondo-nosotros.jpg') no-repeat center center/cover;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+.banner h1 {
+    font-size: 5rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-weight: 200;
+    opacity: 0; /* Inicialmente invisible */
+    transform: translateY(50px); /* Inicialmente desplazado hacia abajo */
+    animation: slideUp 1s ease-out forwards; /* Aplica la animación */
+    
+}
+
+@keyframes slideUp {
+    to {
+        opacity: 1; /* Aparece */
+        transform: translateY(0); /* Se desliza hacia arriba a su posición original */
+    }
+}
+
+
+
+/* Sección Quiénes Somos */
+.quienes-somos {
+    text-align: center;
+    padding: 100px 0; /* Ajusta padding según tu header */
+    background-color: #f4f4f4;
+}
+
+.quienes-somos h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    margin-top: 100px;
+    font-weight: 500;
+    padding: 0 20px;
+}
+
+.quienes-somos p {
+    font-size: 1.1rem;
+    margin-bottom: 8rem;
+    padding: 0 100px;
+}
+
+.quienes-somos img {
+    width: 80%;
+    max-width: 800px;
+    height: auto;
+    margin-bottom: 2rem;
+}
+
+/* Sección Visión, Misión y Valores */
+.valores {
+    display: flex;
+    justify-content: space-around;
+    padding: 100px 50px;
+    background-color: #17181a;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+}
+
+.valores .tarjeta {
+    background-color: #eaeaea;
+    padding: 30px;
+    width: 30%;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    border-radius: 20px;
+}
+
+.valores .tarjeta:hover {
+    transform: translateY(-10px);
+}
+
+.valores h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.valores p {
+    font-size: 1rem;
+}
+
+/* Responsivo */
+@media (max-width: 1000px) {
+    .valores {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .quienes-somos p {
+        font-size: 1.1rem;
+        margin-bottom: 8rem;
+        padding: 0 30px;
+    }
+
+    .valores .tarjeta {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+
+    .quienes-somos img {
+        width: 100%;
+    }
+
+    .banner h1 {
+        font-size: 3.5rem;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        font-weight: 200;
+        padding: 30px;
+        
+    }
+
+    .valores {
+        display: flex;
+        justify-content: space-around;
+        padding: 100px 50px;
+        background-color: #17181a;
+        border-top-left-radius: 50px;
+        border-top-right-radius: 50px;
+    }
+    .valores {
+        display: flex;
+        justify-content: space-around;
+        padding: 100px 10px;
+        background-color: #17181a;
+        border-top-left-radius: 50px;
+        border-top-right-radius: 50px;
+    }
+    
+}
+
+/* Footer general */
+.site-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 2rem;
+    background-color: #17181a;
+    color: white;
+    font-size: 1rem;
+}
+
+/* Estilo para la parte izquierda */
+.footer-left p {
+    margin: 0;
+    font-size: 1rem;
+    color: #bbb;
+}
+
+/* Estilo para la parte central (enlaces) */
+.footer-center {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.footer-center a {
+    color: #bbb;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.footer-center a:hover {
+    color: white;
+}
+
+/* Estilo para la parte derecha (redes sociales) */
+.footer-right {
+    display: flex;
+    gap: 1rem;
+}
+
+.footer-right a img {
+    width: auto;
+    height: 20px;
+    filter: brightness(0) saturate(100%) invert(84%) sepia(0%) saturate(4874%) hue-rotate(88deg) brightness(90%) contrast(92%);
+}
+
+/* Estilos responsivos para pantallas pequeñas */
+@media (max-width: 768px) {
+    .site-footer {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-center {
+        margin: 1rem 0;
+        justify-content: center;
+    }
+
+    .footer-right {
+        justify-content: center;
+    }
+}
